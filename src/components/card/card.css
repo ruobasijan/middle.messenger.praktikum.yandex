@@ -1,0 +1,18 @@
+.card {
+  padding: 50px 30px 30px;
+  max-width: 340px;
+  width: 100%;
+  min-height: 450px;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.14);
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.card__title {
+  font-size: 20px;
+  text-align: center;
+}

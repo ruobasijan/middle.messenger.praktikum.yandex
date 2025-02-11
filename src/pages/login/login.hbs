@@ -1,0 +1,10 @@
+{{#> Card title="Вход" }}
+    <form class="form">
+        {{> Input label="Логин" name="login" }}
+        {{> Input label="Пароль" name="password" }}
+        <div class="action-group">
+            {{> Button label="Войти" type="primary" }}
+            {{> Link text="Нет аккаунта?" page="registration" }}
+        </div>
+    </form>
+{{/Card}}

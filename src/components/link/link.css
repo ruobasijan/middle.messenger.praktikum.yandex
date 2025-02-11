@@ -1,0 +1,10 @@
+.link {
+    color: var(--primary-color);
+    font-size: 11px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: var(--primary-hover-color);
+}
