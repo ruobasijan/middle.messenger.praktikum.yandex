@@ -1,14 +1,15 @@
-{{#> Card title="Регистрация" }}
-    <form class="form">
-        {{> Input label="Почта" name="email" }}
-        {{> Input label="Логин" name="login" }}
-        {{> Input label="Имя" name="first_name" }}
-        {{> Input label="Фамилия" name="second_name" }}
-        {{> Input label="Телефон" name="phone" }}
-        {{> Input label="Пароль" name="password" }}
-        <div class="action-group">
-            {{> Button label="Зарегистрироваться" type="primary" }}
-            {{> Link text="Войти" page="login" }}
-        </div>
-    </form>
-{{/Card}}
+{{#> Main }}
+    <div class="wrapper flex align-items-center justify-content-center">
+        {{#> Card title="Регистрация" }}
+            <form class="form flex flex-direction-column">
+                {{# each inputs }}
+                    {{> Input label=label name=name }}
+                {{/ each }}
+                <div class="form__action flex flex-direction-column align-items-center">
+                    {{> Button label="Зарегистрироваться" type="primary" }}
+                    {{> Link text="Войти" page="login" }}
+                </div>
+            </form>
+        {{/ Card }}
+    </div>
+{{/ Main }}

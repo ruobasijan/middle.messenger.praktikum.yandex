@@ -1,0 +1,14 @@
+{{#> Main }}
+    <div class="wrapper wrapper--profile flex flex-direction-column align-items-center justify-content-center">
+        {{> Avatar image=image }}
+        <ul class="info">
+            {{# each user }}
+                <li class="info__item flex justify-content-space-between">
+                    <p class="info__name">{{name}}</p>
+                    <p class="info__value">{{value}}</p>
+                </li>
+            {{/ each }}
+        </ul>
+        <aside class="sidebar"></aside>
+    </div>
+{{/ Main }}
