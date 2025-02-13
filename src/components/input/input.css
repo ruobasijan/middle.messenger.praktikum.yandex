@@ -13,6 +13,22 @@
     outline: none;
 }
 
+.input__error {
+    display: none;
+    font-size: 9px;
+    position: absolute;
+    bottom: -16px;
+    color: var(--danger-color);
+}
+
+.input__native:invalid {
+    border-color: var(--danger-color);
+}
+
+.input__native:invalid + .input__error {
+    display: block;
+}
+
 .input__label {
     position: absolute;
     top: 8px;

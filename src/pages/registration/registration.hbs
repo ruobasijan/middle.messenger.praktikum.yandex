@@ -1,15 +1,5 @@
 {{#> Main }}
-    <div class="wrapper flex align-items-center justify-content-center">
-        {{#> Card title="Регистрация" }}
-            <form class="form flex flex-direction-column">
-                {{# each inputs }}
-                    {{> Input label=label name=name }}
-                {{/ each }}
-                <div class="form__action flex flex-direction-column align-items-center">
-                    {{> Button label="Зарегистрироваться" type="primary" }}
-                    {{> Link text="Войти" page="login" }}
-                </div>
-            </form>
-        {{/ Card }}
-    </div>
+    {{#> Card title="Регистрация" }}
+        {{> Form this }}
+    {{/ Card }}
 {{/ Main }}

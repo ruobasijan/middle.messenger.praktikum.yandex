@@ -4,6 +4,7 @@
   --primary-active-color: #1f3da3;
   --secondary-color: #1e1e1e;
   --danger-color: #ff2f2f;
+  --danger-hover-color: #e62e2e;
   --dark-color: #999999;
   --gray-color: #eaeaea;
   --white-color: #ffffff;
@@ -37,44 +38,6 @@ ul {
   margin: 0;
 }
 
-.form {
-  flex: 1 1 auto;
-}
-
-.form__action {
-  margin-top: auto;
-  row-gap: 14px;
-}
-
-.info {
-  max-width: 510px;
-  width: 100%;
-}
-
-.info__item {
-  padding: 10px 0;
-  font-size: 13px;
-  border-bottom: 1px solid var(--gray-color);
-}
-
-.info__value {
-  color: var(--dark-color);
-}
-
-.sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 64px;
-  height: 100%;
-  border-right: 1px solid var(--gray-color);
-  background-color: var(--sidebar-background-color);
-}
-
-.sidebar:hover {
-  background-color: var(--sidebar-hover-background-color);
-}
-
 .flex {
   display: flex;
 }
@@ -97,10 +60,11 @@ ul {
 
 .wrapper {
   min-width: 320px;
-  min-height: 100vh;
+  min-height: 100dvh;
   padding: 16px;
 }
 
 .wrapper--profile {
+  row-gap: 50px;
   padding-left: 80px;
 }

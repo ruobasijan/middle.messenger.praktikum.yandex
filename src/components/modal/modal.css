@@ -1,0 +1,25 @@
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    padding: 40px 30px;
+    max-width: 340px;
+    width: 100%;
+    min-height: 257px;
+    border-radius: 12px;
+}
+
+.modal::backdrop {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modal__title {
+    text-align: center;
+    font-size: 16px;
+}
+
+.modal__content {
+    row-gap: 42px;
+}

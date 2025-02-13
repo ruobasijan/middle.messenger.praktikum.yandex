@@ -1,0 +1,8 @@
+.form {
+    flex: 1 1 auto;
+}
+
+.form__action {
+    margin-top: auto;
+    row-gap: 14px;
+}

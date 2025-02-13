@@ -8,3 +8,11 @@
 .link:hover {
     color: var(--primary-hover-color);
 }
+
+.link--danger {
+    color: var(--danger-color);
+}
+
+.link--danger:hover {
+    color: var(--danger-hover-color);
+}
