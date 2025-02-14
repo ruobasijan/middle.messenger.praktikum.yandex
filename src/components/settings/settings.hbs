@@ -8,10 +8,10 @@
         {{/ each }}
     </ul>
 {{/ if }}
-{{# if user_settings }}
+{{# if user_links }}
     <ul class="settings">
-        {{# each user_settings }}
-            <li class="settings__item">
+        {{# each user_links }}
+            <li class="settings__item flex justify-content-space-between">
                 {{> Link this }}
             </li>
         {{/ each }}

@@ -1,6 +1,8 @@
 {{#> Main class="wrapper--profile flex-direction-column" }}
-    {{> Button type="sidebar" page="nav" }}
-    {{> Avatar image=image first_name=first_name }}
-    {{> Settings user_info=user_info user_settings=user_settings}}
-    {{> Modal }}
+    {{> Button variant="sidebar" page="nav" type="button" }}
+    {{> Avatar image=user.image display_name=user.display_name }}
+    {{> Settings user_info=user.info user_links=user.links }}
+    {{> Modal settings=settings.user }}
+    {{> Modal settings=settings.avatar }}
+    {{> Modal settings=settings.password }}
 {{/ Main }}
