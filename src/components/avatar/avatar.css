@@ -1,0 +1,44 @@
+.avatar {
+    row-gap: 21px;
+}
+
+.avatar__image-wrapper {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.avatar__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.avatar__name {
+    font-size: 16px;
+    text-align: center;
+}
+
+.avatar__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--white-color);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.avatar__image-wrapper:hover .avatar__overlay {
+    opacity: 1;
+}
+
+.avatar__overlay-text {
+    text-align: center;
+    font-size: 13px;
+}

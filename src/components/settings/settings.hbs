@@ -1,0 +1,19 @@
+{{# if user_info }}
+    <ul class="settings">
+        {{# each user_info }}
+            <li class="settings__item flex justify-content-space-between">
+                <p class="settings__name">{{name}}</p>
+                <p class="settings__value">{{value}}</p>
+            </li>
+        {{/ each }}
+    </ul>
+{{/ if }}
+{{# if user_links }}
+    <ul class="settings">
+        {{# each user_links }}
+            <li class="settings__item flex justify-content-space-between">
+                {{> Link this }}
+            </li>
+        {{/ each }}
+    </ul>
+{{/ if }}

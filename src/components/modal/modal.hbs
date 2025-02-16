@@ -1,0 +1,6 @@
+<dialog id="modal" class="modal" {{#if settings.showModal}}open{{/if}}>
+    <div class="modal__content flex flex-direction-column align-items-center">
+        <h2 class="modal__title">{{settings.title}}</h2>
+        {{> Form fields=settings.fields button=settings.button }}
+    </div>
+</dialog>

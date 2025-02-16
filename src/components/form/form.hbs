@@ -1,0 +1,11 @@
+<form class="form flex flex-direction-column">
+    {{# each fields }}
+        {{> Input this }}
+    {{/ each }}
+    <div class="form__action flex flex-direction-column align-items-center">
+        {{> Button label=button.label variant=button.variant type=button.type }}
+        {{# if link }}
+            {{> Link text=link.text page=link.page variant=link.variant }}
+        {{/ if }}
+    </div>
+</form>

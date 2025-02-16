@@ -1,0 +1,45 @@
+.input {
+    position: relative;
+}
+
+.input__native {
+    height: 32px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--primary-color);
+    font-size: 13px;
+    padding: 8px 0;
+    outline: none;
+}
+
+.input__error {
+    display: none;
+    font-size: 9px;
+    position: absolute;
+    bottom: -16px;
+    color: var(--danger-color);
+}
+
+.input__native:invalid {
+    border-color: var(--danger-color);
+}
+
+.input__native:invalid + .input__error {
+    display: block;
+}
+
+.input__label {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    font-size: 13px;
+    transition: 0.3s ease;
+    color: var(--dark-color);
+}
+
+.input__native:focus ~ .input__label,
+.input__native:not(:placeholder-shown).input__native:not(:focus) ~ .input__label {
+    top: -8px;
+    left: 0;
+    font-size: 9px;
+}

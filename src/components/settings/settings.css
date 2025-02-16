@@ -1,0 +1,14 @@
+.settings {
+    max-width: 510px;
+    width: 100%;
+}
+
+.settings__item {
+    padding: 10px 0;
+    font-size: 13px;
+    border-bottom: 1px solid var(--gray-color);
+}
+
+.settings__value {
+    color: var(--dark-color);
+}
