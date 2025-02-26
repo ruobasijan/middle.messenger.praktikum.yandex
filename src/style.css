@@ -5,12 +5,11 @@
   --secondary-color: #1e1e1e;
   --danger-color: #ff2f2f;
   --danger-hover-color: #e62e2e;
-  --dark-color: #999999;
+  --dark-color: #999;
   --gray-color: #eaeaea;
-  --white-color: #ffffff;
+  --white-color: #fff;
   --sidebar-background-color: #fbfbfb;
   --sidebar-hover-background-color: #f0f0f0;
-
   --font-medium: 500;
 }
 
@@ -18,7 +17,7 @@ body {
   margin: 0;
   padding: 0;
   color: var(--secondary-color);
-  font-family: 'Inter', sans-serif;;
+  font-family: Inter, sans-serif;;
   font-weight: var(--font-medium);
   line-height: 1;
   overflow: hidden;

@@ -59,7 +59,3 @@
 .button--sidebar:hover::before {
   background-color: var(--primary-hover-color);
 }
-
-.button--sidebar:hover::before {
-  background-color: var(--primary-active-color);
-}
