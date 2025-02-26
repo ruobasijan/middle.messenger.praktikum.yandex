@@ -6,15 +6,24 @@
   "scripts": {
     "start": "npm run build && vite --port 3000",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "stylelint": "stylelint \"**/*.css\" --fix",
+    "stylelint:fix": "stylelint \"**/*.css\" --fix"
   },
-  "engines" : {
-    "node" : ">=12"
+  "engines": {
+    "node": ">=12"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.25.0",
+    "@typescript-eslint/parser": "^8.25.0",
+    "eslint": "^8.57.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-import-resolver-typescript": "^3.8.3",
+    "eslint-plugin-import": "^2.31.0",
+    "handlebars": "^4.7.8",
+    "stylelint": "^16.14.1",
+    "stylelint-config-standard": "^37.0.0",
     "typescript": "~5.7.2",
-    "vite": "^6.1.0",
-    "handlebars": "^4.7.8"
-  },
-  "dependencies": {}
+    "vite": "^6.1.0"
+  }
 }
